@@ -1,0 +1,30 @@
+.effect-1 img{
+    vertical-align: middle;
+    width: 290px;
+}
+.text-desc{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 88%;
+    margin-bottom: 25px;
+    padding: 10px 10px 10px 18px;
+    opacity: 0;
+    z-index: -1;
+}
+.effect-1{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,0,0,0.3);
+    perspective: 800px;
+}
+.effect-1:hover .image-box{
+    transform: rotateX(75deg);
+    transition: 1s;
+    transform-origin: center bottom;
+}
+.effect-1:hover .text-desc{
+    opacity: 1;
+    transition: 2s;
+}
